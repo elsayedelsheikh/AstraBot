@@ -1,10 +1,5 @@
-# List of repositories to use within your workspace
-# See https://github.com/dirk-thomas/vcstool
-############ 
-# Example:
-############
 repositories:
-  examples:
+  ldlidar_ros2:
     type: git
-    url: https://github.com/ros2/examples.git
-    version: humble
+    url: https://github.com/ldrobotSensorTeam/ldlidar_ros2.git
+    version: master
