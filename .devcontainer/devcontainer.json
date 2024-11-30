@@ -1,6 +1,6 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"name": "AstraBot-ROS2 Humble",
+	"name": "AstraBot-ROS2",
 	"dockerFile": "Dockerfile",
 	"build": {
 		"args": {
@@ -23,7 +23,7 @@
 	// 	"DISPLAY": "${localEnv:DISPLAY}", // Needed for GUI try ":0" for windows
 	// 	"WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
 	// 	"XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}",
-	// 	"PULSE_SERVER": "${localEnv:PULSE_SERVER}",
+	// 	"PULSE_SERVER": "${localEnv:PULSE_SERVER}",`
 	// 	"LIBGL_ALWAYS_SOFTWARE": "1" // Needed for software rendering of opengl
 	// },
 	// Set *default* container specific settings.json values on container create.
