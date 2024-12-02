@@ -5,6 +5,7 @@ RUN apt-get update \
    && apt-get -y install --no-install-recommends \
       tmux    \
       neovim   \
+      libserial-dev \
 #       i2c-tools \
 #       libi2c-dev \
       python3-pip \
@@ -14,6 +15,8 @@ RUN apt-get update \
       ros-${ROS_DISTRO}-teleop-twist-keyboard  \
       ros-${ROS_DISTRO}-hardware-interface \
       ros-${ROS_DISTRO}-controller-manager \
+      ros-${ROS_DISTRO}-navigation2 \
+      ros-${ROS_DISTRO}-nav2-bringup \
    # Clean up
    && apt-get autoremove -y \
    && apt-get clean -y \
