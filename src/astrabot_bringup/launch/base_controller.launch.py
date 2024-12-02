@@ -28,7 +28,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "gui",
-            default_value="true",
+            default_value="false",
             description="Start RViz2 automatically with this launch file.",
         )
     )
@@ -73,12 +73,12 @@ def generate_launch_description():
     control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[robot_controllers],
+        parameters=[robot_description, robot_controllers],
         output="both",
         remappings=[
             ("~/robot_description", "/robot_description"),
             ("/diffbot_base_controller/odom", "/odom"),
-            ("/diffbot_base_controller/cmd_vel", "/cmd_vel"),
+            ("/diffbot_base_controller/cmd_vel_unstamped", "/cmd_vel"),
         ],
     )
     robot_state_pub_node = Node(
