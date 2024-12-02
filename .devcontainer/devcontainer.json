@@ -16,7 +16,8 @@
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
 		"--ipc=host",
-		"--device=/dev/ttyTHS1"
+		"--device=/dev/ttyTHS1",
+		"--device=/dev/ttyUSB0"
 
 	],
 	// "containerEnv": {

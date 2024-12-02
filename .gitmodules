@@ -5,3 +5,7 @@
 [submodule "src/diffdrive_arduino"]
 	path = src/diffdrive_arduino
 	url = https://github.com/joshnewans/diffdrive_arduino.git
+	branch = humble
+[submodule "src/ldlidar_ros2"]
+	path = src/ldlidar_ros2
+	url = https://github.com/ldrobotSensorTeam/ldlidar_ros2.git
