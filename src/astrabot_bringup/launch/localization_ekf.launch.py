@@ -31,9 +31,8 @@ def generate_launch_description():
             name='ekf_filter_node',
             output='screen',
             parameters=[os.path.join(get_package_share_directory("astrabot_bringup"), 'params', 'localization_ekf.yaml')],
-        #     remappings=[
-        #         ('/input/pose', '/turtle2/pose'),
-        #         ('/output/cmd_vel', '/turtlesim2/turtle1/cmd_vel'),
-        #     ],
+            remappings=[
+                ('/odometry/filtered', '/odom'),
+            ],
            ),
 ])

@@ -1,8 +1,0 @@
-[submodule "ThirdParty/ros_arduino_bridge"]
-	path = ThirdParty/ros_arduino_bridge
-	url = https://github.com/elsayedelsheikh/ros_arduino_bridge.git
-	branch = feature-encoder-update
-[submodule "src/diffdrive_arduino"]
-	path = src/diffdrive_arduino
-	url = https://github.com/joshnewans/diffdrive_arduino.git
-	branch = humble
