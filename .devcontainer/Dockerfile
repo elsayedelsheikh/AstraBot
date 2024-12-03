@@ -3,12 +3,11 @@ FROM althack/ros2:humble-dev
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
    && apt-get -y install --no-install-recommends \
-      tmux    \
-      neovim   \
+      tmux       \
+      neovim      \
+      libi2c-dev   \
       libserial-dev \
-#       i2c-tools \
-#       libi2c-dev \
-      python3-pip \
+      python3-pip    \
       ros-${ROS_DISTRO}-xacro \
       ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
       ros-${ROS_DISTRO}-foxglove-bridge \
@@ -26,6 +25,7 @@ ENV DEBIAN_FRONTEND=dialog
 # Add User to Dialout Group for accessing Serial
 ARG USERNAME=ros
 RUN usermod -aG dialout ${USERNAME}
+RUN usermod -aG i2c ${USERNAME}
 
 # Set up auto-source of workspace for ros user
 ARG WORKSPACE

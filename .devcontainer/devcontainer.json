@@ -17,8 +17,8 @@
 		"--volume=/mnt/wslg:/mnt/wslg",
 		"--ipc=host",
 		"--device=/dev/ttyTHS1",
-		"--device=/dev/ttyUSB0"
-
+		"--device=/dev/ttyUSB0",
+		"--device=/dev/i2c-1"
 	],
 	// "containerEnv": {
 	// 	"DISPLAY": "${localEnv:DISPLAY}", // Needed for GUI try ":0" for windows

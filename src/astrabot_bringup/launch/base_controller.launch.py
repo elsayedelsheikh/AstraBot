@@ -77,7 +77,7 @@ def generate_launch_description():
         output="both",
         remappings=[
             ("~/robot_description", "/robot_description"),
-            ("/diffbot_base_controller/odom", "/odom"),
+            # ("/diffbot_base_controller/odom", "/odom"),
             ("/diffbot_base_controller/cmd_vel_unstamped", "/cmd_vel"),
         ],
     )
